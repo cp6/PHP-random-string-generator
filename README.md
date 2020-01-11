@@ -2,7 +2,9 @@
 Simple PHP random string generator class with configurable options for length, character type and custom characters.
 
 
-###Usage
+
+### Usage
+
 
 Usage is easy, just call the class and then set character amount, character type OR custom characters. Otherwise 16 random characters will be returned.
 
