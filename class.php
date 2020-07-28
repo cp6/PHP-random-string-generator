@@ -12,7 +12,7 @@ class stringGen
      * @param string $characters_type ALL | ALLNOSYMBOLS | NUMBERS | LOWERCASE | UPPERCASE | SYMBOLS
      * @param string $custom_characters Use only characters from here, leave empty to ignore
      */
-    public function __construct($character_count = 16, $characters_type = 'ALL', $custom_characters = '')
+    public function __construct(int $character_count = 16, string $characters_type = 'ALL', string $custom_characters = '')
     {
         $this->character_count = $character_count;
         $this->characters_type = $characters_type;
@@ -23,7 +23,7 @@ class stringGen
      * Returns the string as per defined
      * @return string
      */
-    public function generate()
+    public function generate():string
     {
         if ($this->custom_characters == '') {
             if ($this->characters_type == 'ALL') {
