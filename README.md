@@ -1,6 +1,14 @@
 # PHP random string generator
 Simple PHP random string generator class with configurable options for length, character type and custom characters.
 
+Allows for:
+
+* Custom characters
+* Numbers only
+* Symbols only
+* Upper case only
+* Lowercase only
+* All with NO symbols
 
 
 ### Usage
