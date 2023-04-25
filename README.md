@@ -10,29 +10,26 @@ Usage is easy, just call the class and then set character amount, character type
 
 ```php
 <?php
-require_once('class.php');
+require_once('stringGen.php');
 
-$string = new stringGen(16, 'ALL');
-echo $string->generate();//kX]1Hw({9uR@I=ch
+$string = (new stringGen(16, 'SYMBOLS'))->generate();
+echo $string;//[?+}!^/(+}
 
-$string = new stringGen(16, 'ALLNOSYMBOLS');
-echo $string->generate();//ziQmDkkb8E3KpGVY
+$string = (new stringGen(8, 'ALLNOSYMBOLS'))->generate();
+echo $string;//d68eKRdz
 
-$string = new stringGen(16, 'NUMBERS');
-echo $string->generate();//5628155816434050
+$string = (new stringGen(16, 'NUMBERS'))->generate();
+echo $string;//8374911345932147
 
-$string = new stringGen(16, 'SYMBOLS');
-echo $string->generate();//[%(+[%?{)%~-%_=}
+$string = (new stringGen(16, '', '01'))->generate();
+echo $string;//1101101110000011
 
-$string = new stringGen(16, '', '01');
-echo $string->generate();//1101101110000011
+$string = (new stringGen(22, '', 'ABCXYZ'))->generate();
+echo $string;//XBXACAXAXZZXYCCAYZAAZB
 
-$string = new stringGen(22, '', 'ABCXYZ');
-echo $string->generate();//XBXACAXAXZZXYCCAYZAAZB
+$string = (new stringGen(28, 'ALL'))->generate();
+echo $string;//LrZdGW*/hwZ8w]ixBEOCNXOPHX_S
 
-$string = new stringGen(28, 'ALL');
-echo $string->generate();//r4#n6uP][LWU{[|$QHRV1D7A|jpR
-
-$string = new stringGen(6, 'UPPERCASE');
-echo $string->generate();//HTDKCY
+$string = (new stringGen(6, 'UPPERCASE'))->generate();
+echo $string;//HTDKCY
 ```
